@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Productivity Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Productivity Hub</h1>
+        <p>Kelola waktu, fokus, dan pikiranmu dalam satu tempat.</p>
+    </header>
+
+    <main class="container">
+        <!-- Fitur 1: Pomodoro Timer -->
+        <section class="card timer-section">
+            <h2>⏱️ Pomodoro Timer</h2>
+            <div class="timer-display" id="timer">25:00</div>
+            <div class="timer-controls">
+                <button id="start-btn">Mulai</button>
+                <button id="pause-btn">Jeda</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <p id="timer-status">Waktunya Fokus!</p>
+        </section>
+
+        <!-- Fitur 2: To-Do List -->
+        <section class="card todo-section">
+            <h2>📝 Tugas Hari Ini</h2>
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="Tambah tugas baru...">
+                <button id="add-todo-btn">Tambah</button>
+            </div>
+            <ul id="todo-list">
+                <!-- List tugas akan muncul di sini via JS -->
+            </ul>
+        </section>
+
+        <!-- Fitur 3: Jurnal Harian -->
+        <section class="card journal-section">
+            <h2>📓 Jurnal Refleksi</h2>
+            <textarea id="journal-input" placeholder="Apa yang kamu pelajari atau syukuri hari ini?"></textarea>
+            <button id="save-journal-btn">Simpan Jurnal</button>
+            <p id="journal-status" class="status-msg"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Smart Productivity Hub. Dibuat untuk efisiensi sehari-hari.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                                    </html>
